@@ -1,12 +1,12 @@
 function forumPosterRanks(threads) {
-	posts = [];
-	usernames = [];
-	counts = [];
-	reps = [0, 0, 0, 0];
-	i = [1, 1, 1, 1];
-	j = 0;
-	final = [];
-	returnVal = {};
+	posts          = [];
+	usernames      = [];
+	counts         = [];
+	reps           = [0, 0, 0, 0];
+	i              = [1, 1, 1, 1];
+	j              = 0;
+	final          = [];
+	returnVal      = {};
 	threads.forEach((num, index) => {
 		fetch(
 			"https://scratchdb.lefty.one/v2/forum/search/?q=%2Btopic:" +
@@ -16,7 +16,7 @@ function forumPosterRanks(threads) {
 			.then((response) => response.text())
 			.then((html) => {
 				reps[index] = Math.floor(JSON.parse(html).hits / 50) + 1;
-				posts = posts.concat(JSON.parse(html).posts);
+				posts       = posts.concat(JSON.parse(html).posts);
 				j++;
 				for (i[index] = 1; i[index] < reps[index]; i[index]++) {
 					fetch(
@@ -39,6 +39,7 @@ function forumPosterRanks(threads) {
 									} else {
 										++counts[username];
 									}
+
 								});
 								for (var key in counts) {
 									final.push([key, counts[key]]);
@@ -52,7 +53,7 @@ function forumPosterRanks(threads) {
 								final.reverse();
 								document.getElementById("load").outerHTML = "";
 								for (var l = 0; l < final.length; l++) {
-									e = document.createElement("tr");
+									e           = document.createElement("tr");
 									e.innerHTML =
 										"<td>" +
 										(l + 1) +
@@ -66,8 +67,10 @@ function forumPosterRanks(threads) {
 										.appendChild(e);
 								}
 							}
+
 						});
 				}
+
 			});
 	});
 	//PP forumPosterRanks(["382664", "454707", "406057", "386916"])

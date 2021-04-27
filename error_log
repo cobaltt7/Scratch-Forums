@@ -1,3 +1,0 @@
-[22-Jan-2021 16:18:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/rpreidco/paul-s-reid/web-dev/Scratch Forums-js/multiCurl.php on line 73
-[22-Jan-2021 17:02:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/rpreidco/paul-s-reid/web-dev/Scratch Forums-js/multiCurl.php on line 85
-[22-Jan-2021 18:06:04 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/rpreidco/paul-s-reid/web-dev/Scratch Forums-js/categoryStats.php on line 57
