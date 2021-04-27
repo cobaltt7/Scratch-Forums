@@ -24,7 +24,9 @@
 		</table>
 		<script src="script.min.js"></script>
 		<script>
-			forumPosterRanks(new URLSearchParams(location.search).getAll("thread"));
+			forumPosterRanks(
+				new URLSearchParams(location.search).getAll("thread"),
+			);
 		</script>
 	</body>
 </html>
