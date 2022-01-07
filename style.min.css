@@ -1,49 +1,49 @@
 input[type="button"] {
-    border: none;
-    background: 0;
-    outline: 0;
-    box-shadow: none;
-    font-size: 18px;
+	border: none;
+	background: 0;
+	outline: 0;
+	box-shadow: none;
+	font-size: 18px;
 }
 
 body {
-    margin: 10px;
-    font-display: swap;
+	margin: 10px;
+	font-display: swap;
 }
 
 input {
-    margin: 3px;
+	margin: 3px;
 }
 
 table {
-    width: 100%;
+	width: 100%;
 }
 
 table th {
-    background-color: #1B4885;
-    color: #F8F8FF;
-    border-bottom: #000 solid 4px;
+	background-color: #1b4885;
+	color: #f8f8ff;
+	border-bottom: #000 solid 4px;
 }
 
 [colspan="3"] {
-    text-align: center;
+	text-align: center;
 }
 
 table tr:nth-child(odd) {
-    background-color: #EEE;
+	background-color: #eee;
 }
 
 table tr:nth-child(even) {
-    background-color: #FFF;
+	background-color: #fff;
 }
 
 table tbody {
-    border: #000 2.5px solid;
+	border: #000 2.5px solid;
 }
 
 table td,
 table th {
-    padding: 7.5px;
+	padding: 7.5px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
